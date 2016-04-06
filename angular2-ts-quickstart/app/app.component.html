@@ -1,0 +1,33 @@
+<h1>My First Angular 2 App</h1>
+<dl>
+  <dt>click</dt>
+  <dd>
+    <button (click)="onClick()">Click Me!</button>
+    {{clickMessage}}
+  </dd>
+</dl>
+<br>
+<dl>
+  <dt>value</dt>
+  <dd>
+    <input [value]="valName">
+    valName: {{valName}}
+  </dd>
+</dl>
+<br>
+<dl>
+  <dt>ngModel</dt>
+  <dd>
+    <input [(ngModel)]="modelName">
+    modelName: {{modelName}}
+  </dd>
+</dl>
+<br>
+<dl>
+  <dt>@inputのテスト</dt>
+  <dd>
+    <user-account userName="田中" fullName="田中太郎丸"></user-account>
+  </dd>
+</dl>
+
+<button (click)="toApp()">app2へ</button>

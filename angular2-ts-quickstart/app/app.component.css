@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+dl {
+  width: 100%;
+}
+
+dl:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+dt {
+  width: 200px;
+  float: left;
+}
+
+dd {
+  float: left;
+}
