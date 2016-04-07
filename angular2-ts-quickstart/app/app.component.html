@@ -1,28 +1,28 @@
 <h1>My First Angular 2 App</h1>
 <dl>
-  <dt>click</dt>
+  <dt>clickのテスト</dt>
   <dd>
     <button (click)="onClick()">Click Me!</button>
     {{clickMessage}}
   </dd>
 </dl>
-<br>
+
 <dl>
-  <dt>value</dt>
+  <dt>valueのテスト</dt>
   <dd>
     <input [value]="valName">
     valName: {{valName}}
   </dd>
 </dl>
-<br>
+
 <dl>
-  <dt>ngModel</dt>
+  <dt>ngModelのテスト</dt>
   <dd>
     <input [(ngModel)]="modelName">
     modelName: {{modelName}}
   </dd>
 </dl>
-<br>
+
 <dl>
   <dt>@inputのテスト</dt>
   <dd>
@@ -30,4 +30,38 @@
   </dd>
 </dl>
 
-<button (click)="toApp()">app2へ</button>
+<dl>
+  <dt>ngFor（ng-repeat）のテスト</dt>
+  <dd>
+    <table>
+      <thead>
+        <tr>
+          <th>名前</th>
+          <th>ふりがな</th>
+          <th>学年</th>
+          <th>組</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="#item of lists">
+          <td>{{item.name}}</td>
+          <td>{{item.huri}}</td>
+          <td>{{item.schoolYear}}</td>
+          <td>{{item.set}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </dd>
+</dl>
+
+<!-- <button [routerLink]="['App2']">app2へ</button> -->
+<button >page2へ</button>
+
+
+    <!-- <h1>{{title}}</h1> -->
+    <nav>
+<!--       <a [routerLink]="['Page1']">Page1へ</a>
+      <a [routerLink]="['Page2']">Page2へ</a> -->
+    </nav>
+    <!-- <router-outlet></router-outlet> -->

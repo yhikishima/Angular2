@@ -7,6 +7,7 @@ body {
 
 dl {
   width: 100%;
+  margin-bottom: 20px;
 }
 
 dl:after {
@@ -16,8 +17,9 @@ dl:after {
 }
 
 dt {
-  width: 200px;
+  width: 100px;
   float: left;
+  font-weight: bold;
 }
 
 dd {
